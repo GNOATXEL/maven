@@ -5,7 +5,7 @@ import org.junit.Test;
 public class FirstPdfTest {
 
   @Test
-  public void testAddMetaData(){
+  public void testBaka(){
     assert(true);
   }
 }

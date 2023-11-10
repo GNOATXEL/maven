@@ -54,7 +54,7 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.6</version>
+                <version>0.8.11</version>
                 <executions>
                     <execution>
                         <goals>
@@ -123,9 +123,22 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
                 <version>3.21.0</version>
+                <configuration>
+                    <minimumTokens>30</minimumTokens>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-changelog-plugin</artifactId>
             </plugin>
 
         </plugins>
     </reporting>
+
+    <scm>
+        <connection>scm:git:https://gitlab.istic.univ-rennes1.fr/axemartin/omdmaven.git</connection>
+        <url>https://gitlab.istic.univ-rennes1.fr/axemartin/omdmaven</url>
+    </scm>
 
 </project>
