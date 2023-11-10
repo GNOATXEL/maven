@@ -175,6 +175,7 @@ public class FirstPdf {
         subCatPart.add(list);
     }
 
+    //commentaire amogus
     private static void addEmptyLine(Paragraph paragraph, int number) {
         for (int i = 0; i < number; i++) {
             paragraph.add(new Paragraph(" "));
